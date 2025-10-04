@@ -57,7 +57,7 @@ const SpacesShowcase = () => {
 
           <div className="w-full relative overflow-hidden py-4">
             <Marquee speed={30} gradient gradientColor="#000000" pauseOnHover>
-              <ul className="flex items-center">
+              <ul className="flex items-center overflow-x-hidden pt-2 overflow-y-hidden">
                 {marqueeItems.map((item, index) => (
                   <MarqueeItem key={`m-${index}`} text={item} />
                 ))}
